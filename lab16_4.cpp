@@ -24,7 +24,6 @@ void shuffle(int &a,int &b,int &c,int &d){
 		temp = *money[i];
 		pick = rand()%4;
 		*money[i] = *money[pick], *money[pick] = temp;
-		//cout << *money[i] << " " << pick << " " << temp << " ";
 	}
 
 	return;
