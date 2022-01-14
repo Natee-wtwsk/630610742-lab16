@@ -17,3 +17,15 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &a,int &b,int &c,int &d){
+	int *money[4] = {&a, &b, &c, &d}, temp, pick;
+	for(int i = 0; i < 4; i++){
+		temp = *money[i];
+		pick = rand()%4;
+		*money[i] = *money[pick], *money[pick] = temp;
+		//cout << *money[i] << " " << pick << " " << temp << " ";
+	}
+
+	return;
+}
